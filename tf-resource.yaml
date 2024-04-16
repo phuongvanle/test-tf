@@ -6,6 +6,7 @@ metadata:
 spec:
   approvePlan: "plan-main-2d85865834" # first 8 digits of a commit hash is enough
   interval: 1m
+  storeReadablePlan: human
   path: ./
   sourceRef:
     kind: GitRepository
