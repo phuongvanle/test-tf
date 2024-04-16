@@ -4,7 +4,7 @@ metadata:
   name: hello-world-2
   namespace: flux-system
 spec:
-  approvePlan: "plan-main-4c31e68202" # first 8 digits of a commit hash is enough
+  approvePlan: "plan-main-2d85865834" # first 8 digits of a commit hash is enough
   interval: 1m
   path: ./
   sourceRef:
