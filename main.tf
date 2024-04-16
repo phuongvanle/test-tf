@@ -16,6 +16,18 @@ resource "random_id" "id" {
   byte_length = 4
 }
 
+resource "random_id" "id2" {
+  keepers = {
+    trigger = var.subject
+  }
+
+  byte_length = 4
+}
+
+output "hello_world_2" {
+  value = "Hello World, ${var.subject} ${random_id.id2.hex}!"
+}
+
 output "hello_world" {
   value = "Hello World, ${var.subject} ${random_id.id.hex}!"
 }
