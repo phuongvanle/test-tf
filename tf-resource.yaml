@@ -1,0 +1,13 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha2
+kind: Terraform
+metadata:
+  name: hello-world-2
+  namespace: flux-system
+spec:
+  approvePlan: "" # first 8 digits of a commit hash is enough
+  interval: 1m
+  path: ./
+  sourceRef:
+    kind: GitRepository
+    name: helloworld-2
+    namespace: flux-system

@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1     
+kind: GitRepository
+metadata:
+  name: helloworld-2
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://github.com/phuongvanle/test-tf.git 
+  ref:    
+    branch: main
