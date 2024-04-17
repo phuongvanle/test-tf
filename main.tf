@@ -47,6 +47,6 @@ output "hello_world" {
   value = "Hello World, ${var.subject} ${random_id.id.hex}!"
 }
 
-output "hello_world" {
+output "hello_world_3" {
   value = "Hello World, ${var.subject} ${random_id.id4.hex}!"
 }
